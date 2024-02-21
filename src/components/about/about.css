@@ -1,0 +1,144 @@
+/* The main container */
+
+.about__container {
+  display: grid;
+  /* You van setting columns using percentage */
+  grid-template-columns: 36% 50%;
+  gap: 15%;
+  place-items: center;
+  height: max-content;
+  justify-items: center;
+}
+
+.about__me {
+  width: 100%;
+  /*  */
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(45deg, transparent, #4db5ff, transparent);
+  display: grid;
+  place-items: center;
+}
+
+/* Explanation about 'aspect-ratio' property: 
+
+ - The CSS property aspect-ratio lets you create boxes that maintain proportional dimensions where the height and width of a box are calculated automatically as a ratio.*/
+
+.about__me-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(10deg);
+  transition: var(--transition);
+  filter: grayscale(1);
+}
+
+.about__me-image:hover {
+  transform: rotate(0);
+  /* Adding transition to make the change more smooth */
+}
+
+/* Container for cards */
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* Container for each box in separate */
+.about__card {
+  background: var(--color-bg-variant);
+  border: transparent;
+  border-radius: 1rem;
+  padding: 1.8rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.about__card:hover {
+  background-color: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.about__icon {
+  color: var(--color-primary);
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.about__card h5 {
+  font-size: 1.4rem;
+}
+
+.about__card small {
+  font-size: 0.67rem;
+  color: var(--color-light);
+}
+
+.about__content p {
+  margin: 2rem 0 2.6rem;
+  color: var(--color-light);
+  padding: 0 2rem;
+}
+
+.about__content a {
+  width: 30%;
+  text-align: center;
+}
+
+/* Media Queries */
+
+/* Responsive in smaller devices */
+
+/* Checking devices
+ - tablet: iPad air;
+ - Smartphones: iphone XR; */
+
+/*  ** Media Queries - Tablets (Medium devices) */
+@media screen and (max-width: 1024px) {
+  /* One column for screen - changing the main container*/
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  /* Change the size of the container to change the size of the image */
+  .about__me {
+    width: 50%;
+    /* Centralizing elements inside the container */
+    margin: 2.5rem auto 6rem;
+  }
+
+  /* Changing the size of the text-content */
+}
+
+/*  ** Media Queries - cellphones ( devices) */
+@media screen and (max-width: 600px) {
+  .about__me {
+    width: 65%;
+    margin: 2rem auto 3rem;
+  }
+
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .about__card h5 {
+    font-size: 1rem;
+  }
+
+  .about__card small {
+    font-size: 0.8rem;
+  }
+  .about__content {
+    text-align: center;
+    margin: 0 1rem;
+  }
+  .about__content p {
+    margin: 1.5rem 0;
+    font-size: 15px;
+  }
+}

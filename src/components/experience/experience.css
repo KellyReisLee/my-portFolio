@@ -1,0 +1,91 @@
+/* The main container */
+
+h1 {
+  margin-bottom: 2rem;
+}
+.experience__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.experience__container > div {
+  background-color: var(--color-bg-variant);
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.experience__container > div:hover {
+  background-color: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.experience__container > div h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+  font-size: 1.7rem;
+}
+
+.experience__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+}
+
+.experience-details {
+  display: flex;
+  gap: 1rem;
+}
+
+.experience__icon {
+  margin-top: 5.5px;
+  color: var(--color-primary);
+}
+
+/* Responsive in smaller devices */
+
+/* Checking devices
+ - tablet: iPad air
+ - Smartphones: iphone XR */
+/*  ** Media Queries - Tablets (Medium devices) */
+@media screen and (max-width: 1024px) {
+  .experience__container {
+    grid-template-columns: 1fr;
+  }
+
+  .experience__container > div {
+    width: 70%;
+    padding: 2.5rem 1rem;
+    margin: 0 auto;
+  }
+  .experience__content {
+    padding: 1rem 2rem;
+  }
+}
+
+/*  ** Media Queries - cellphones ( devices) */
+@media screen and (max-width: 755px) {
+  .experience__container {
+    gap: 1rem;
+  }
+  .experience__container > div {
+    width: 90%;
+    padding: 2rem 1rem;
+  }
+
+  .experience__container > div h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+
+  small {
+    font-size: 0.6rem;
+  }
+}

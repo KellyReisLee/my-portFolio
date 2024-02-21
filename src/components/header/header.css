@@ -1,0 +1,102 @@
+header {
+  height: 140vh;
+  padding-top: 4rem;
+  overflow: hidden;
+  /* margin-bottom: 10rem; */
+}
+
+.title {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.header__container {
+  text-align: center;
+  height: 70%;
+  position: relative;
+}
+
+/* ++++++++ CTA *********** */
+
+.cta {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* ********* Header Socials */
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+}
+
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background-color: #4db5ff;
+}
+
+/* ****** me container */
+.me {
+  background: linear-gradient(#4db5ff, transparent);
+  width: 25rem;
+  height: 35rem;
+  position: absolute;
+  /* Centralize the div right in the middle */
+  left: calc(50% - 12rem);
+  margin-top: 3rem;
+  border-radius: 12rem 12rem 0 0;
+  overflow: hidden;
+  padding: 5rem 1.5rem;
+}
+
+/* Scrolldown text-element */
+
+.scroll__down {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+/* Responsive in smaller devices */
+
+/* Checking devices
+ - tablet: iPad air
+ - Smartphones: iphone XR */
+/*  ** Media Queries - Tablets (Medium devices) */
+@media screen and (max-width: 1024px) {
+  header {
+    height: 120vh;
+  }
+}
+
+/*  ** Media Queries - cellphones ( devices) */
+@media screen and (max-width: 600px) {
+  header {
+    height: 110vh;
+  }
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
+
+  .me {
+    width: 20rem;
+    height: 28rem;
+    left: calc(50% - 10rem);
+  }
+
+  #about {
+    margin-top: 1rem;
+  }
+}

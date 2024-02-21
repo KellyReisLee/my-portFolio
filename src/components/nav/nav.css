@@ -1,0 +1,37 @@
+nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  /* The max-content sizing keyword represents the intrinsic maximum width or height of the content. */
+  width: max-content;
+  display: block;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  /* Centralizing */
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  border-radius: 2rem;
+  /* Give some blur */
+  /* The backdrop-filter CSS property lets you apply graphical effects such as blurring or color shifting to the area behind an element. */
+  backdrop-filter: blur(15px);
+}
+
+nav a {
+  background: transparent;
+  padding: 0.3rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1.5rem;
+}
+
+nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+nav a.active {
+  background-color: var(--color-primary);
+  color: white;
+}
