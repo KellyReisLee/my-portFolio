@@ -1,5 +1,5 @@
 header {
-  height: 140vh;
+  height: 120vh;
   padding-top: 4rem;
   overflow: hidden;
   /* margin-bottom: 10rem; */
@@ -83,8 +83,9 @@ header {
 /*  ** Media Queries - cellphones ( devices) */
 @media screen and (max-width: 600px) {
   header {
-    height: 110vh;
+    height: 120vh;
   }
+
   .header__socials,
   .scroll__down {
     display: none;
