@@ -7,7 +7,7 @@ import IMG4 from '../../assets/focus.png'
 import IMG5 from '../../assets/omni-food.png'
 import IMG6 from '../../assets/quiz-game.png'
 import IMG7 from '../../assets/timer-dashboard.png'
-import IMG8 from '../../assets/alertaê.png'
+import IMG8 from '../../assets/alertae.png'
 import IMG9 from '../../assets/milk-max.png'
 
 
