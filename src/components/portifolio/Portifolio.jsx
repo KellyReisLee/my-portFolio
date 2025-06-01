@@ -7,6 +7,9 @@ import IMG4 from '../../assets/focus.png'
 import IMG5 from '../../assets/omni-food.png'
 import IMG6 from '../../assets/quiz-game.png'
 import IMG7 from '../../assets/timer-dashboard.png'
+import IMG8 from '../../assets/alertaê.png'
+import IMG9 from '../../assets/milk-max.png'
+
 
 // Data with all information - I will iterate through this array.
 const data = [
@@ -60,6 +63,20 @@ const data = [
     title: "Timer Dashboard",
     github: "https://github.com/KellyReisLee",
     demo: "https://timer-dashboard-react.netlify.app",
+  },
+  {
+    id: 8,
+    image: IMG8,
+    title: "Alertaê",
+    github: "https://github.com/KellyReisLee",
+    demo: "https://alertae.vercel.app/",
+  },
+  {
+    id: 9,
+    image: IMG9,
+    title: "Milk-Max",
+    github: "https://github.com/KellyReisLee",
+    demo: "https://milkmax.onrender.com/",
   },
 ];
 
